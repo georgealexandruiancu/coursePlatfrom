@@ -1,0 +1,288 @@
+// COLOR PALLETE
+
+$darkBlue: #011543;
+$lightBlue: #295A74;
+$darkOrange: #D26C22;
+$lightGreen:  #2BE379;
+$fancyWhite: #f5f5f5;
+
+.navbar{
+    background-color: $darkBlue !important;
+    color: white !important;
+}
+.navbar-brand{
+    color: white !important;
+    padding-left: 35px;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+}
+.nav-item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-link{
+    color: white !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+.active{
+   box-shadow: inset 0 -3.5px 0 $lightGreen;
+   color: $lightGreen !important; 
+}
+.nav-link:hover{
+    box-shadow: inset 0 -3.5px 0 $lightGreen;
+   color: $lightGreen !important;
+}
+.navbar-toggler{
+    color: white !important;
+    border-color: white !important;
+    cursor: pointer;    
+}
+.splashHolder{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url('../images/splashHolder.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.splashHolder .info{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.splashHolder .info .title{
+    max-width: 400px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+@media(max-width: 800px){
+    .splashHolder .info{
+        position: absolute;
+        top: 150px;
+        left: 50px;
+    } 
+    .splashHolder .info .title{
+        max-width: 320px;
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+     .splashHolder .info .btn-custom{
+        background: $darkOrange;
+        padding: 5px 5px 5px 5px;
+        border-radius: 25px;
+        color: white;
+        font-weight: 600;
+        transition: all .3s;
+        font-size: 16px;
+    }
+}
+.btn-custom{
+    background: $darkOrange;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    transition: all .3s;
+}
+.btn-custom:hover{
+     background: $lightGreen;
+     color: $darkBlue
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.features-holder{
+    position: relative;
+    padding: 20px;
+    transition: all 0.3s;
+}
+.icon-holder{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.icon-holder  img{
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-disable{
+    transition: all 0.3s;
+}
+.img-hover{
+    transition: all 0.3s;
+    opacity: 0;
+}
+.features-holder:hover .icon-holder .img-hover{
+    opacity: 1;
+}
+.features-holder:hover .icon-holder .img-disable{
+    opacity: 0;
+}
+.features-holder .info{
+    text-align: center;
+}
+.features-holder .info .title{
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: $darkBlue;
+    margin-bottom: 20px;
+}
+.features-holder .info .description{
+    height: 170px;
+    max-height: 170px;
+}
+.features-holder:hover{
+    background: $darkBlue;
+}
+.features-holder:hover .info .title{
+    color: $lightGreen;
+}
+.features-holder:hover .info .description{
+    color: white;
+}
+.features-holder:hover .btn-custom{
+    background: $lightGreen;
+     color: $darkBlue
+}
+.fancyWhite{
+    background: $fancyWhite;
+}
+.courseInfo-holder{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.courseInfo-holder .title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.courseInfo-holder .info{
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 35px;
+}
+.card-course-info{
+    padding: 15px;
+}
+.card-course-info .card{
+    background: white;
+    padding: 15px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.59);
+    transition: all 0.3s;
+}
+.card-course-info .title{
+    font-size: 1.3rem;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.card-course-info .card:hover{
+    background: $darkBlue;
+    -webkit-box-shadow: 0px 0px 12px 10px white;
+    -moz-box-shadow: 0px 0px 12px 10px white;
+    box-shadow: 0px 0px 12px 10px white;
+}
+.card-course-info .card:hover .title{
+    color: $lightGreen;
+}
+.card-course-info .card:hover .description{
+    color: white;
+    font-weight: 600;
+}
+.registration-holder{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.bgImgFancy{
+    background: url("../images/splashHolder.jpg");
+    background-attachment: fixed;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.registration-holder .holder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+}
+.registration-holder .holder .btn{
+    margin-top: 25px;
+}
+.footer{
+    background: $darkBlue;
+}
+.brand-footer-holder{
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+}
+.brand-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white !important;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+}
+.p-30{
+    padding: 30px;
+}
+.news-footer .title{
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: white;
+}
+.card-news-footer{
+    color: white !important;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+.footer-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.card-news-footer:hover{
+    padding-left: 15px;
+    font-weight: 900;
+    letter-spacing: .8px
+}
+.btn-footer-holder{
+     padding-top: 30px;
+       min-height: 250px;
+    min-width: 100px;
+}
+.btn-footer-holder .title{
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+}   
