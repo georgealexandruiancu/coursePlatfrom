@@ -342,4 +342,16 @@
   color: white;
   text-align: center;
 }
+
+.navbar-fixed {
+  position: fixed;
+}
+
+.copyright {
+  font-size: .9rem;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

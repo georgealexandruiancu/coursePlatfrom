@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +9,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/animate.css">
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
         <a class="navbar-brand" href="#">Logo Platform</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +45,17 @@
     </nav>
     <div class="splashHolder">
         <div class="info">
-            <div class="title">
+            <div class="title animated" id="titleSplashHolder">
                 Course for Artificial Intelligence
             </div>
-            <div class="btn btn-custom">Register now!</div>
+            <div class="btn btn-custom animated" id="btnSplashHolder">Register now!</div>
         </div>
     </div>
-    <div class="container-fluid mt-100">
+    <div class="container-fluid mt-100" id="featuresPannel">
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 features-holder">
+                    <div class="col-md-4 features-holder animated" id="left-featured">
                         <div class="icon-holder">
                             <img src="images/artificial-dark.png" alt="" class="img-disable">
                             <img src="images/artificial-light.png" alt="" class="img-hover">
@@ -70,7 +70,7 @@
                             <div class="btn btn-custom">View more</div>
                         </center>
                     </div>
-                    <div class="col-md-4 features-holder">
+                    <div class="col-md-4 features-holder animated" id="center-featured">
                         <div class="icon-holder">
                             <img src="images/machine-dark.png" alt="" class="img-disable">
                             <img src="images/machine-light.png" alt="" class="img-hover">
@@ -85,7 +85,7 @@
                             <div class="btn btn-custom">View more</div>
                         </center>
                     </div>
-                    <div class="col-md-4 features-holder">
+                    <div class="col-md-4 features-holder animated" id="right-featured">
                         <div class="icon-holder">
                             <img src="images/learning-dark.png" alt="" class="img-disable">
                             <img src="images/learning-light.png" alt="" class="img-hover">
@@ -110,7 +110,7 @@
         <div class="row">
             <div class="container courseInfo-holder">
                 <div class="row">
-                    <div class="col-md-12 course-description">
+                    <div class="col-md-12 course-description" id="courseDescription">
                         <div class="title">
                             Artificial Intelligence
                         </div>
@@ -119,7 +119,7 @@
                             praesentium dolore vero adipisci doloribus libero, in quod magni! Suscipit numquam
                             explicabo sequi! Esse voluptate ipsam temporibus.
                         </div>
-                        <div class="row mt-50">
+                        <div class="row mt-50 animated" id="leftInfo">
                             <div class="col-md-6 card-course-info" data-tilt>
                                 <div class="card">
                                     <div class="title">
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row animated" id="rightInfo">
                             <div class="col-md-6 card-course-info" data-tilt>
                                 <div class="card">
                                     <div class="title">
@@ -214,6 +214,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12 copyright">
+                        <center>
+                            Copyright - Logo Platform - 2018. Designed by Alex Iancu
+                        </center>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -223,6 +230,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="js/tilt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/ui.js"></script>
 </body>
 
