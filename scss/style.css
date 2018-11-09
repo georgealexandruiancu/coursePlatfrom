@@ -354,4 +354,114 @@
   padding-bottom: 20px;
   color: white;
 }
+
+.newsSplashHolder {
+  height: 400px;
+  background: url("../images/newsSplashHolder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.card-news {
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-news .image-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-news .image-holder img {
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-news .image-holder::before {
+  background-color: rgba(1, 21, 67, 0.8);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.card-news .info-card {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  color: white;
+  z-index: 2;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.card-news .info-card .title {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-news .info-card .btn {
+  position: absolute;
+  top: 140px;
+  font-size: .7rem;
+}
+
+.card-news:hover .image-holder img {
+  width: 200%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.card-news:hover .info-card .title {
+  color: #2BE379;
+}
+
+.card-news:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(1, 21, 67, 0.2);
+}
+
+.btn-accordation {
+  font-weight: 900;
+  font-size: 15px;
+  color: #D26C22;
+  cursor: pointer;
+}
+
+.btn-accordation:hover {
+  cursor: pointer;
+  color: #D26C22;
+  text-decoration: none;
+}
+
+.card-body .card-title {
+  font-weight: 900;
+  border-bottom: 1px solid rgba(1, 21, 67, 0.2);
+  padding: 10px;
+}
+
+.card-details {
+  font-weight: 900;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
